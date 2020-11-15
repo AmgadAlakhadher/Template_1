@@ -1,0 +1,54 @@
+/* 4.1-Content Section */
+.content-info{
+    margin: 0 auto;
+}
+
+.content-info-call{
+    text-align: center;
+}
+
+.content-info-call:nth-child(2){
+    margin: 0 5%;
+}
+
+.content-info .icon{
+    color: #6195ff;
+    margin: 20px 0;
+}
+
+.info-kind{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.info-text{
+    color:var(--grayColor);
+}
+
+.content-box-form{
+    margin: 40px auto;
+    text-align: center;
+}
+.input-style{
+    padding: 10px 5px;
+    background: #e8e8e8;
+    border: none;
+}
+.input-half-width{
+    width: 33%;   
+}
+.input-full-width{
+    width: 66.5%;
+}
+.content-form-btn{
+    text-transform: capitalize;
+    background-color: #6195ff;
+    color: var(--whiteColor);
+    font-size: 17px;
+    display: block;
+    margin: 20px auto;
+    padding: 13px 30px;
+    border: none;
+    cursor: pointer;
+    
+}

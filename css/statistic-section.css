@@ -1,0 +1,31 @@
+/* 3.6-Statistic Section */
+.statistic{
+    position: relative;
+    background-image: url(../images/background/background2.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+}
+
+.statistic-content{
+    padding: 120px 0;
+}
+
+.statistic-item{
+    width: 25%;
+    text-align: center;
+}
+
+.statistic-item .icon{
+    color: #6195ff;
+    margin-bottom: 15px;
+}
+
+.statistic-item-title{
+    color: var(--whiteColor);
+    font-weight: bold;
+    font-size: 30px;  
+}
+.statistic-item-text{
+    color: var(--whiteColor);
+}

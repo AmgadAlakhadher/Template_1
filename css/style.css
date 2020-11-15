@@ -1,0 +1,219 @@
+/*
+   1-common styles
+   2-general styles
+   3-sections
+    3.0-Header Section
+    3.1-Home Section 
+    3.2-About Section 
+    3.3-Portfolio Section 
+    3.4-Services Section 
+    3.5-Prices Section 
+    3.6-Team Section 
+    3.7-Blog Section 
+    3.8-Content Section 
+    3.9-Footer Section
+
+*/
+
+
+/* 1-common styles */
+
+/*
+     
+   -overlay
+   -class container in div to get all site in center
+   -opacity hover
+   -padding after every section
+   -title every section
+   -hover effect 1 (left to right)
+   -hover effect 2 (top to bottom)
+*/
+
+/* 2-general styles  */
+
+
+:root{
+    --mainColor: #6195ff;
+    --grayColor: #999;
+    --whiteColor: #fff;
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0,0, 0.7);
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: montserrat,sans-serif;
+}
+button{
+    font-family: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+.opacityHover{
+    transition: .5s opacity;
+}
+.opacityHover:hover{
+    opacity: 0.6;
+}
+
+.ltr-effect ,.ttb-effect{
+    position: relative;
+      
+}
+.ltr-effect:after , .ttb-effect:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background: rgb(49, 49, 49);
+    z-index: -1;
+    
+}
+.ltr-effect:after{
+    width: 0;
+    transition: width .5s;
+}
+
+.ttb-effect:after{
+    height: 0;
+    transition: height .5s;
+}
+.ltr-effect:hover:after{
+    width: 100%;
+    height: 100%;
+}
+
+.ttb-effect:hover:after{
+    height: 100%;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.pd-y{
+    padding: 100px 0;
+}
+.section-header{
+    text-align: center;
+    
+}
+.section-title{
+    font-size: 35px;
+    text-transform: capitalize;
+}
+.section-header .line{
+    display: block;
+    width: 60px;
+    height: 5px;
+    background: var(--mainColor);
+    margin: 0px auto 70px auto;
+}
+/*---------3-sections--------*/
+/*---------3.0-header------------*/
+
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background: rgba(0, 0,0,0.4);
+    
+}
+
+.header .logo{
+    width: 40%;
+}
+.header .logo img{
+    width: 20%;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.header .navbar{
+    width: 60%;
+    list-style-type: none;
+    text-align: right;
+}
+
+.header .navbar > li{
+    display: inline-block;
+    text-align: right;
+}
+
+.header .navbar > li > a{
+    font-size: 15px;
+    color: antiquewhite;
+    padding: 30px 15px;
+    display: block;
+    
+}
+.header .navbar > li > a.active:after , .header .navbar > li > a:after{
+    content:"";
+    display: block;
+    margin-top: 2px;
+    width: 0;
+    height: 3px;
+    background: var(--mainColor);
+    transition: .5s width;
+}
+
+.header .navbar > li > a.active:after{
+    width: 100%;
+}
+
+.header .navbar > li > a:hover:after{
+    width: 100%;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-content{
+    position: absolute;
+    background: var(--mainColor);
+    width: 150px;
+    text-align: center;
+    left: -50%;
+    top: 70%;
+    list-style-type: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .4s, visibility .4s;
+}
+.dropdown-content a{
+    color: var(--whiteColor);
+    padding: 10px;
+    display: block;
+}
+.dropdown:hover .dropdown-content{
+    opacity: 1;
+    visibility: visible;
+}
+

@@ -1,0 +1,33 @@
+/* 3.2-About Section */
+.about-item{
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    padding: 50px 20px;
+    
+}
+
+.about-item:nth-child(2){
+    margin: 0 5%;
+}
+
+.about-item:hover .about-item-title{
+    color: var(--whiteColor);
+}
+.about-item .icon{
+    color:var(--mainColor);
+    
+}
+
+.about-item-title{
+    text-transform: capitalize;
+    transition: .5s color;
+}
+
+.about-item-desc{
+    line-height: 1.6;
+    color: #8999;
+}
+.about-item-link{
+    color:var(--mainColor);
+    text-transform: capitalize;
+}

@@ -1,0 +1,54 @@
+/* 4.0-Recents News Section */
+
+.recents-item{
+    width: 32%;
+    background: var(--whiteColor);
+ }
+ 
+ .recents-item:nth-child(2){
+     margin: 0 2%;
+ }
+ 
+ .recents-item-img{
+     width: 100%;
+ }
+ 
+ .recents-info{
+   padding: 20px;
+ }
+ 
+ .recents-list{
+     list-style: none;
+     margin: 10px 0;
+ 
+ }
+ 
+ .recents-list li{
+     display: inline-block;
+     text-transform: capitalize;
+     color:var(--grayColor);
+     margin: 0 5px;
+ }
+ 
+ .recents-list li i{
+     color: #6195ff;
+ }
+ 
+ .recents-title{
+     margin: 20px 0;
+     text-transform: capitalize;
+ }
+ 
+ .recents-text{
+     color:var(--grayColor);
+     line-height: 1.6;
+ }
+ 
+ .recents-btn{
+     background: none;
+     border: none;
+     text-transform: capitalize;
+     color: #6195ff;
+     font-size: 17px;
+     cursor: pointer;
+ }
