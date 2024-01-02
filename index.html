@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <!-- files css -->
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/utils.css">
@@ -39,7 +40,6 @@
         <div class="logo float-left">
             <img src="images/logo-alt.webp" alt="logo" draggable="false">
         </div> <!-- ./logo -->
-
         <ul class="navbar float-left">
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">About</a></li>
@@ -55,6 +55,8 @@
             </li>
             <li><a href="#">Content</a></li>
         </ul> <!-- ./navbar -->
+        <i class="fa fa-bars barsIcon onChange" aria-hidden="true"></i>
+        <i class="fa fa-times closeIcon" aria-hidden="true"></i>
     </div> <!-- ./container -->
     <div class="clear"></div>
   </div> <!-- ./header -->
@@ -583,5 +585,7 @@
             <p class="footer-copyright">copyright &copy; 2019 . all rights reserved designed by<a href="#" class="footerlink"> colorlib</a></p>
           </div> <!-- ./footer-item -->
       </div> <!-- ./footer -->
+      <!-- scripts -->
+      <script src="./js/header.js"></script>
 </body>
 </html>

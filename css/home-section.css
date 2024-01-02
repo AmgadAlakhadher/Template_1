@@ -2,6 +2,9 @@
 
 .home{
     height: 100vh;
+    width: 100% !important;
+    padding: 0;
+    margin: 0;
     background-image: url(../images/background/background1.webp);
     background-size: cover;
     position: relative;
@@ -40,4 +43,24 @@
     margin-left: 10px;
     background-color: royalblue;
     color: var(--whiteColor);
+}
+
+/* @media (ma)
+xs (for phones - screens less than 768px wide)
+sm (for tablets - screens equal to or greater than 768px wide)
+md (for small laptops - screens equal to or greater than 992px wide)
+lg (for laptops and desktops - screens equal to or greater than 1200px wide) */
+@media (max-width: 1200px) {
+    .home-title{
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 992px) {
+    .home-title{
+        font-size: 2rem;
+    }
+    .home-desc{
+        line-height: 1;
+        font-size: 1rem;
+    }
 }
